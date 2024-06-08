@@ -3,7 +3,7 @@ use core::fmt;
 use reqwest;
 use crate::io_read::CRequest;
 
-#[derive(Debug)]
+// #[derive(Debug)]
 pub struct MethodError;
 impl fmt::Display for MethodError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -36,3 +36,6 @@ pub async fn cwes_request(crequest: CRequest) -> Result<reqwest::StatusCode, Met
         _ => Err(MethodError)
         }
 }
+
+
+// Result<Reqwest::StatusCode, MethodError>  Ok(response.status())

@@ -12,7 +12,7 @@ impl CRequest {
     fn new(ip: String, port: String, method: String, path: String, full: String) -> CRequest {
         CRequest { ip: String::from(ip.trim_end()),
              port: String::from(port.trim_end()), 
-             method: String::from(method.trim_end()), 
+             method: String::from(method.trim_end().to_lowercase()), 
              path: String::from(path.trim_end()), 
              full
             }

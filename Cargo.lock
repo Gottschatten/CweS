@@ -3,15 +3,6 @@
 version = 3
 
 [[package]]
-name = "CweS"
-version = "0.1.0"
-dependencies = [
- "ratatui",
- "reqwest",
- "tokio",
-]
-
-[[package]]
 name = "addr2line"
 version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -180,6 +171,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acdd7c62a3665c7f6830a51635d9ac9b23ed385797f70a83bb8bafe9c572ab2b"
 dependencies = [
  "winapi",
+]
+
+[[package]]
+name = "cwes"
+version = "0.1.0"
+dependencies = [
+ "ratatui",
+ "reqwest",
+ "tokio",
 ]
 
 [[package]]
